@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="theme-color" content="#33474d">
-	<title>VLFeat | Full of wonders.</title>
+	<title>初识VLFeat | Full of wonders.</title>
 	<link rel="stylesheet" href="/css/style.css" />
 	
       <link rel="alternate" href="/atom.xml" title="Full of wonders." type="application/atom+xml">
@@ -32,7 +32,7 @@
 	<main>
 		<article>
 	
-		<h1>VLFeat</h1>
+		<h1>初识VLFeat</h1>
 	
 	<div class="article__infos">
 		<span class="article__date">2016-12-07</span><br />
@@ -47,16 +47,17 @@
 	
 
 	
-		<h1 id="VLFeat-学习"><a href="#VLFeat-学习" class="headerlink" title="VLFeat 学习"></a>VLFeat 学习</h1><blockquote>
+		<p>VLFeat 是一个跨平台的、开源的函数集合，主要集合了计算机视觉方面的大量函数。</p>
+<p>##VLFeat 学习##</p>
+<blockquote>
 <p>学习数据源 <a href="http://www.vlfeat.org/" target="_blank" rel="external">VLFeat-Home</a></p>
-<p>###定义####</p>
 </blockquote>
-<p>VLFeat is a cross-platform open source collection of vision algorithms with a special focus on visual features (for instance <strong>SIFT</strong> and <strong>MSER</strong>) and clustering (<br><strong>k-means, hierarchical k-means, agglomerative information bottleneck</strong>)<br>(Image understanding and local features extraction and matching.).<br> It bundles a MATLAB toolbox, a clean and portable C library and a number of command line utilities.</p>
+<p>###定义####<br>VLFeat is a cross-platform open source collection of vision algorithms with a special focus on visual features (for instance <strong>SIFT</strong> and <strong>MSER</strong>) and clustering (<strong>k-means, hierarchical k-means, agglomerative information bottleneck</strong>)<br>(Image understanding and local features extraction and matching.).<br> It bundles a MATLAB toolbox, a clean and portable C library and a number of command line utilities.</p>
 <p>视觉算法集合（视觉特征、聚类）</p>
 <hr>
 <p><strong>视觉特征</strong></p>
 <ul>
-<li><a href="http://blog.csdn.net/abcjennifer/article/details/7639681" target="_blank" rel="external">SIFT</a><br> 一种检测局部特征的算法，该算法通过求一幅图中的特征点（interest points,or corner points）及其有关scale 和 orientation 的描述得到特征并进行图像特征点匹配</li>
+<li><a href="http://blog.csdn.net/abcjennifer/article/details/7639681" target="_blank" rel="external">SIFT</a><br>一种检测局部特征的算法，该算法通过求一幅图中的特征点（interest points,or corner points）及其有关scale 和 orientation 的描述得到特征并进行图像特征点匹配</li>
 <li><a href="http://blog.csdn.net/zhaocj/article/details/40742191" target="_blank" rel="external">MSER</a><br>最大稳定极值区域（MSER-Maximally Stable Extremal Regions）可以用于图像的斑点区域检测。<br>MSER的基本原理是对一幅灰度图像取阈值进行二值化处理，阈值从0到255依次递增。阈值的递增类似于分水岭算法中的水面的上升，随着水面的上升，有一些较矮的丘陵会被淹没，如果从天空往下看，则大地分为陆地和水域两个部分，这类似于二值图像。在得到的所有二值图像中，图像中的某些连通区域变化很小，甚至没有变化，则该区域就被称为最大稳定极值区域。</li>
 </ul>
 <p><strong>聚类</strong></p>
